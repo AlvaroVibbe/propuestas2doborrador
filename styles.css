@@ -51,7 +51,7 @@ button { font: inherit; }
 .header-kicker::before { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); content: ''; }
 .header-home { text-decoration: none; }
 .hero { position: relative; width: 100%; min-height: 100svh; padding: 118px max(28px, calc((100vw - 1160px) / 2)) 74px; display: grid; grid-template-columns: 1fr; align-items: center; overflow: hidden; background-color: var(--brand-deep); color: white; }
-.hero::before { position: absolute; z-index: 0; inset: 0; background-image: linear-gradient(90deg, #09112b 0%, rgb(9 17 43 / 96%) 28%, rgb(9 17 43 / 78%) 46%, rgb(9 17 43 / 28%) 72%, rgb(9 17 43 / 8%) 100%), linear-gradient(0deg, rgb(9 17 43 / 45%), transparent 48%), url('/portada-rodrigo-paz.png'); background-position: center, center, right center; background-size: cover, cover, cover; background-repeat: no-repeat; content: ''; opacity: 0; animation: coverReveal 1.3s cubic-bezier(.2,.65,.25,1) .05s forwards; }
+.hero::before { position: absolute; z-index: 0; inset: 0; background-image: linear-gradient(90deg, #09112b 0%, rgb(9 17 43 / 96%) 28%, rgb(9 17 43 / 78%) 46%, rgb(9 17 43 / 28%) 72%, rgb(9 17 43 / 8%) 100%), linear-gradient(0deg, rgb(9 17 43 / 45%), transparent 48%), url('/portada-rodrigo-paz.webp'); background-position: center, center, right center; background-size: cover, cover, cover; background-repeat: no-repeat; content: ''; opacity: 0; animation: coverReveal 1.3s cubic-bezier(.2,.65,.25,1) .05s forwards; }
 .hero::after { position: absolute; z-index: 0; inset: 0; background-image: linear-gradient(rgb(255 255 255 / 3%) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 3%) 1px, transparent 1px); background-size: 72px 72px; -webkit-mask-image: linear-gradient(90deg, #000 0%, transparent 68%); mask-image: linear-gradient(90deg, #000 0%, transparent 68%); content: ''; pointer-events: none; }
 .hero-copy { position: relative; z-index: 1; max-width: 670px; }
 .hero-copy > .eyebrow { opacity: 0; animation: riseReveal .7s cubic-bezier(.2,.65,.25,1) .25s forwards; }
@@ -68,7 +68,7 @@ h1, h2, h3, p { margin-top: 0; }
 .text-link { min-height: 52px; display: inline-flex; align-items: center; gap: 18px; padding: 7px 8px 7px 19px; border: 1px solid rgb(255 255 255 / 64%); border-radius: 999px; color: white; font-size: 12px; font-weight: 750; text-decoration: none; opacity: 0; animation: riseReveal .7s cubic-bezier(.2,.65,.25,1) 1.2s forwards, ctaPulse 1.7s ease-in-out 2s infinite; transition: border-color .2s, background .2s, transform .2s; }
 .text-link span { width: 35px; height: 35px; display: grid; place-items: center; border-radius: 50%; background: var(--accent); color: white; font-size: 17px; }
 .text-link:hover { transform: translateY(-2px); border-color: var(--cyan); background: rgb(255 255 255 / 9%); animation-play-state: paused; }
-.hero-art { position: relative; min-height: 390px; background: url('/portada-rodrigo-paz.png') 90% center / cover no-repeat; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 33%, #000 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 33%, #000 100%); }
+.hero-art { position: relative; min-height: 390px; background: url('/portada-rodrigo-paz.webp') 90% center / cover no-repeat; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 33%, #000 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 33%, #000 100%); }
 .hero-art::before, .hero-art::after { content: none; }
 .hero-art-top { display: flex; justify-content: space-between; padding: 23px 24px; color: #c3d1e9; font-size: 9px; letter-spacing: 1.35px; font-weight: 800; }
 .hero-art-top span:last-child { color: #72d9f3; }
@@ -209,7 +209,7 @@ h1, h2, h3, p { margin-top: 0; }
   .header-kicker::before { flex: 0 0 auto; }
   .homepage .site-header { height: 70px; }
   .hero { min-height: 100svh; padding: 100px 18px 50px; grid-template-columns: 1fr; gap: 0; }
-  .hero::before { background-image: linear-gradient(180deg, rgb(9 17 43 / 98%) 0%, rgb(9 17 43 / 90%) 36%, rgb(9 17 43 / 54%) 67%, rgb(9 17 43 / 22%) 100%), url('/portada-rodrigo-paz.png'); background-position: center, 72% center; background-size: cover, cover; }
+  .hero::before { background-image: linear-gradient(180deg, rgb(9 17 43 / 98%) 0%, rgb(9 17 43 / 90%) 36%, rgb(9 17 43 / 54%) 67%, rgb(9 17 43 / 22%) 100%), url('/portada-rodrigo-paz.webp'); background-position: center, 72% center; background-size: cover, cover; }
   .hero h1 { max-width: 540px; font-size: clamp(46px, 13vw, 64px); letter-spacing: -2.7px; }
   .hero-deck { margin-block: 21px 22px; font-size: 15px; line-height: 1.65; }
   .hero-art-top { padding: 17px 18px; }

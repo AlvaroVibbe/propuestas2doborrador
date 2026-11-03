@@ -13,7 +13,7 @@ for (const item of verifications) {
 
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
-for (const file of ['index.html', 'styles.css', 'app.js', 'article.js', 'verifications.json', 'portada-rodrigo-paz.png']) await cp(path.join(root, file), path.join(out, file));
+for (const file of ['index.html', 'styles.css', 'app.js', 'article.js', 'verifications.json', 'portada-rodrigo-paz.webp']) await cp(path.join(root, file), path.join(out, file));
 try { await cp(path.join(root, 'images'), path.join(out, 'images'), { recursive: true }); } catch (error) { if (error.code !== 'ENOENT') throw error; }
 
 const esc = (value = '') => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);

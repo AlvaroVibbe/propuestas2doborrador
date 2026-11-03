@@ -30,7 +30,7 @@ Cada entrada conserva una URL como `/verificaciones/verificacion-01/`. `npm run 
 
 ## Portada e identidad
 
-El titular y subtítulo iniciales están en `index.html`. El arte reservado para portada puede reemplazarse por una imagen. Los colores y tipografías están al inicio de `styles.css`.
+El titular y subtítulo iniciales están en `index.html`. La portada actual es `portada-rodrigo-paz.webp`, optimizada para cargar rápido y precargada como imagen principal. Los colores y tipografías están al inicio de `styles.css`.
 
 Se consultó ChequeaBolivia, pero no fue posible leer la hoja de estilos ni descargar/verificar los PNG proporcionados. El proyecto usa una aproximación tipográfica del nombre y dibujos vectoriales de respaldo; sustituye esos elementos por los recursos oficiales cuando estén disponibles. Los textos de las cuatro definiciones se conservan como fueron entregados.
 
