@@ -75,6 +75,15 @@ filterBar.addEventListener('click', (event) => {
   render();
 });
 
+document.querySelector('[data-explore-verifications]')?.addEventListener('click', (event) => {
+  event.preventDefault();
+  activeFilter = 'all';
+  render();
+  const target = document.querySelector('#verificaciones');
+  target?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  target?.focus({ preventScroll: true });
+});
+
 fetch('/verifications.json').then((response) => {
   if (!response.ok) throw new Error('No se pudo cargar el contenido');
   return response.json();
